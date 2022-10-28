@@ -5,29 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>블로그</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLPPCJKTVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DLPPCJKTVV');
-</script>
+  <style>
+    h1{
+      border-bottom: 1px black solid;
+      text-align: center;
+      padding:20px;
+      margin:0px;
+    }
+    ol{
+      border-right: 1px black solid;
+      padding: 40px;
+      width: 70px;
+      margin:0px;    
+    }
+    a{
+      text-decoration: none;
+      color:cadetblue;
+    }
+    #p{
+      display:grid;
+      grid-template-columns: 180px 1fr;
+    }
+    #p{
+      padding-left:30px;
+    }
+    @media(max-width:500px){
+      #p{display:block;}
+      ol{border-right: none;}
+      h1{border-bottom: none;}
+    }
+    </style>
+ 
 </head>
 <body>   
   <h1><a href="index.html">나 박준형</a></h1>
-  <ol>
-    <li><a href="1.html">인적사항</a></li>   
-    <li><a href="2.html">취미</a></li>
-    <li><a href="3.html">블로그</a></li>
-    <li><a href="4.html">꿈</a></li>
-  </ol>
-  <h2>제 블로그 주소는요</h2> 
-  <p><a href="https://blog.naver.com/bagww51" target="_blank" title="습작연구소">습작연구소</a>
-    블로그에는 독후감과 기록을 합니다. 때때론 감성에 젖어 제가 뭐라고 하는지도 모르겠다마는 그래도 그런게 기록이라는 단어로 포장한 추억아닐까요
-    제가 블로그를 통해서 하고자하는 바는 명확하지않습니다. 그냥 나에 대해서 써내려간다는 거 말고는 말이죠. 그래도 한번 들러서 독후감 정돈 읽어볼 여유 있지않으세요?
-  </p>
+    <div id="p">
+      <ol>
+        <li><a href="1.html">인적사항</a></li>   
+        <li><a href="2.html">취미</a></li>
+        <li><a href="3.html">블로그</a></li>
+        <li><a href="4.html">꿈</a></li>
+      </ol>  
+        <p><a href="https://blog.naver.com/bagww51" target="_blank" title="습작연구소">습작연구소</a>
+        블로그에는 독후감과 기록을 합니다. 때때론 감성에 젖어 제가 뭐라고 하는지도 모르겠다마는 그래도 그런게 기록이라는 단어로 포장한 추억아닐까요
+        제가 블로그를 통해서 하고자하는 바는 명확하지않습니다. 그냥 나에 대해서 써내려간다는 거 말고는 말이죠. 그래도 한번 들러서 독후감 정돈 읽어볼 여유 있지않으세요?
+        </p>
+  </div>   
   <p>
     <div id="disqus_thread"></div>
 <script>
